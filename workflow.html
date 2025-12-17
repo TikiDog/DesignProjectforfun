@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sortable Color-Coded Workflow</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Workflow Manager</h1>
+            <p class="subtitle">Organize your tasks with drag-and-drop and color coding</p>
+        </header>
+
+        <div class="add-task-section">
+            <input type="text" id="taskInput" placeholder="Enter a new task..." />
+            <div class="color-picker">
+                <span class="color-label">Color:</span>
+                <div class="color-options">
+                    <button class="color-btn" data-color="#ff6b6b" style="background-color: #ff6b6b;" title="Red - Urgent"></button>
+                    <button class="color-btn" data-color="#4ecdc4" style="background-color: #4ecdc4;" title="Teal - In Progress"></button>
+                    <button class="color-btn" data-color="#45b7d1" style="background-color: #45b7d1;" title="Blue - Information"></button>
+                    <button class="color-btn" data-color="#96ceb4" style="background-color: #96ceb4;" title="Green - Complete"></button>
+                    <button class="color-btn" data-color="#ffeaa7" style="background-color: #ffeaa7;" title="Yellow - Review"></button>
+                    <button class="color-btn" data-color="#dfe6e9" style="background-color: #dfe6e9;" title="Gray - Low Priority"></button>
+                    <button class="color-btn" data-color="#a29bfe" style="background-color: #a29bfe;" title="Purple - Idea"></button>
+                    <button class="color-btn active" data-color="#74b9ff" style="background-color: #74b9ff;" title="Light Blue - Default"></button>
+                </div>
+            </div>
+            <button id="addTaskBtn" class="add-btn">Add Task</button>
+        </div>
+
+        <div class="filter-section">
+            <button class="filter-btn active" data-filter="all">All Tasks</button>
+            <button class="filter-btn" data-filter="#ff6b6b">Urgent</button>
+            <button class="filter-btn" data-filter="#4ecdc4">In Progress</button>
+            <button class="filter-btn" data-filter="#96ceb4">Complete</button>
+            <button class="filter-btn" data-filter="#ffeaa7">Review</button>
+        </div>
+
+        <div class="workflow-area">
+            <div id="taskList" class="task-list">
+                <!-- Tasks will be dynamically added here -->
+            </div>
+        </div>
+
+        <div class="instructions">
+            <h3>How to use:</h3>
+            <ul>
+                <li><strong>Add tasks:</strong> Type in the input field, select a color, and click "Add Task"</li>
+                <li><strong>Sort tasks:</strong> Drag and drop tasks to reorder them</li>
+                <li><strong>Change color:</strong> Click on a task's color circle to change its category</li>
+                <li><strong>Delete tasks:</strong> Click the × button on any task</li>
+                <li><strong>Filter:</strong> Use the filter buttons to view tasks by category</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
