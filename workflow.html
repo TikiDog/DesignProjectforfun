@@ -10,50 +10,132 @@
     <div class="container">
         <header>
             <h1>Workflow Manager</h1>
-            <p class="subtitle">Organize your tasks with drag-and-drop and color coding</p>
+            <p class="subtitle">Simple drag-and-drop task management - like Excel, but visual!</p>
+            <button id="addSampleDataBtn" class="sample-data-btn">📝 Add Sample Tasks (to get started)</button>
         </header>
 
+        <div class="quick-guide">
+            <div class="guide-item">
+                <span class="guide-number">1</span>
+                <span class="guide-text">Enter task name</span>
+            </div>
+            <div class="guide-item">
+                <span class="guide-number">2</span>
+                <span class="guide-text">Add person (optional)</span>
+            </div>
+            <div class="guide-item">
+                <span class="guide-number">3</span>
+                <span class="guide-text">Set due date (optional)</span>
+            </div>
+            <div class="guide-item">
+                <span class="guide-number">4</span>
+                <span class="guide-text">Pick a color</span>
+            </div>
+            <div class="guide-item">
+                <span class="guide-number">5</span>
+                <span class="guide-text">Click Add Task</span>
+            </div>
+        </div>
+
         <div class="add-task-section">
-            <input type="text" id="taskInput" placeholder="Enter a new task..." />
+            <div class="input-group">
+                <label for="taskInput">Task Name *</label>
+                <input type="text" id="taskInput" placeholder="e.g., Review client proposal" />
+            </div>
+            <div class="input-group">
+                <label for="personInput">Assigned To</label>
+                <input type="text" id="personInput" placeholder="e.g., John, Sarah" class="person-input" />
+            </div>
+            <div class="input-group">
+                <label for="dueDateInput">Due Date</label>
+                <input type="date" id="dueDateInput" class="date-input" />
+            </div>
             <div class="color-picker">
-                <span class="color-label">Color:</span>
+                <span class="color-label">Choose Color:</span>
                 <div class="color-options">
-                    <button class="color-btn" data-color="#ff6b6b" style="background-color: #ff6b6b;" title="Red - Urgent"></button>
-                    <button class="color-btn" data-color="#4ecdc4" style="background-color: #4ecdc4;" title="Teal - In Progress"></button>
-                    <button class="color-btn" data-color="#45b7d1" style="background-color: #45b7d1;" title="Blue - Information"></button>
-                    <button class="color-btn" data-color="#96ceb4" style="background-color: #96ceb4;" title="Green - Complete"></button>
-                    <button class="color-btn" data-color="#ffeaa7" style="background-color: #ffeaa7;" title="Yellow - Review"></button>
-                    <button class="color-btn" data-color="#dfe6e9" style="background-color: #dfe6e9;" title="Gray - Low Priority"></button>
-                    <button class="color-btn" data-color="#a29bfe" style="background-color: #a29bfe;" title="Purple - Idea"></button>
-                    <button class="color-btn active" data-color="#74b9ff" style="background-color: #74b9ff;" title="Light Blue - Default"></button>
+                    <button class="color-btn" data-color="#ff6b6b" style="background-color: #ff6b6b;" title="Red - High Priority">
+                        <span class="color-tooltip">High Priority</span>
+                    </button>
+                    <button class="color-btn" data-color="#ffeaa7" style="background-color: #ffeaa7;" title="Yellow - Normal">
+                        <span class="color-tooltip">Normal</span>
+                    </button>
+                    <button class="color-btn active" data-color="#74b9ff" style="background-color: #74b9ff;" title="Blue - Low Priority">
+                        <span class="color-tooltip">Low Priority</span>
+                    </button>
+                    <button class="color-btn" data-color="#96ceb4" style="background-color: #96ceb4;" title="Green - Completed">
+                        <span class="color-tooltip">Completed</span>
+                    </button>
                 </div>
             </div>
-            <button id="addTaskBtn" class="add-btn">Add Task</button>
+            <button id="addTaskBtn" class="add-btn">➕ Add Task</button>
         </div>
 
-        <div class="filter-section">
-            <button class="filter-btn active" data-filter="all">All Tasks</button>
-            <button class="filter-btn" data-filter="#ff6b6b">Urgent</button>
-            <button class="filter-btn" data-filter="#4ecdc4">In Progress</button>
-            <button class="filter-btn" data-filter="#96ceb4">Complete</button>
-            <button class="filter-btn" data-filter="#ffeaa7">Review</button>
-        </div>
+        <div class="workflow-board">
+            <div class="workflow-column" data-column="todo">
+                <div class="column-header">
+                    <h2>To Do</h2>
+                    <span class="task-count">0</span>
+                </div>
+                <div class="column-tasks" data-column="todo">
+                    <!-- Tasks will be added here -->
+                </div>
+            </div>
 
-        <div class="workflow-area">
-            <div id="taskList" class="task-list">
-                <!-- Tasks will be dynamically added here -->
+            <div class="workflow-column" data-column="in-progress">
+                <div class="column-header">
+                    <h2>In Progress</h2>
+                    <span class="task-count">0</span>
+                </div>
+                <div class="column-tasks" data-column="in-progress">
+                    <!-- Tasks will be added here -->
+                </div>
+            </div>
+
+            <div class="workflow-column" data-column="review">
+                <div class="column-header">
+                    <h2>Review</h2>
+                    <span class="task-count">0</span>
+                </div>
+                <div class="column-tasks" data-column="review">
+                    <!-- Tasks will be added here -->
+                </div>
+            </div>
+
+            <div class="workflow-column" data-column="done">
+                <div class="column-header">
+                    <h2>Done</h2>
+                    <span class="task-count">0</span>
+                </div>
+                <div class="column-tasks" data-column="done">
+                    <!-- Tasks will be added here -->
+                </div>
             </div>
         </div>
 
         <div class="instructions">
-            <h3>How to use:</h3>
-            <ul>
-                <li><strong>Add tasks:</strong> Type in the input field, select a color, and click "Add Task"</li>
-                <li><strong>Sort tasks:</strong> Drag and drop tasks to reorder them</li>
-                <li><strong>Change color:</strong> Click on a task's color circle to change its category</li>
-                <li><strong>Delete tasks:</strong> Click the × button on any task</li>
-                <li><strong>Filter:</strong> Use the filter buttons to view tasks by category</li>
-            </ul>
+            <h3>💡 Quick Tips</h3>
+            <div class="tips-grid">
+                <div class="tip-card">
+                    <div class="tip-icon">🖱️</div>
+                    <div class="tip-title">Move Tasks</div>
+                    <div class="tip-description">Click and drag tasks between columns (just like moving rows in Excel!)</div>
+                </div>
+                <div class="tip-card">
+                    <div class="tip-icon">🎨</div>
+                    <div class="tip-title">Color by Person</div>
+                    <div class="tip-description">Each person gets their own color automatically - easy to see who's working on what</div>
+                </div>
+                <div class="tip-card">
+                    <div class="tip-icon">📅</div>
+                    <div class="tip-title">Update Dates</div>
+                    <div class="tip-description">Click on any due date to change it</div>
+                </div>
+                <div class="tip-card">
+                    <div class="tip-icon">🗑️</div>
+                    <div class="tip-title">Delete Tasks</div>
+                    <div class="tip-description">Click the × button on any task to remove it</div>
+                </div>
+            </div>
         </div>
     </div>
 
