@@ -686,6 +686,135 @@ section h2::after {
 }
 
 /* ========================================
+   PERSONAL SECTION
+   ======================================== */
+
+.personal-section {
+    padding: 6rem 24px;
+    background: linear-gradient(135deg, #fdf8f3 0%, #f8f4ef 100%);
+}
+
+.personal-content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.personal-intro {
+    font-size: 1.25rem;
+    line-height: 1.8;
+    text-align: center;
+    color: var(--primary);
+    margin-bottom: 3rem;
+    font-style: italic;
+}
+
+.personal-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2.5rem;
+    margin-bottom: 4rem;
+}
+
+.personal-item {
+    background: var(--white);
+    padding: 2.5rem 2rem;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.personal-item:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-lg);
+}
+
+.personal-icon {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+    display: block;
+    line-height: 1;
+}
+
+.personal-item h3 {
+    font-family: var(--font-display);
+    color: var(--accent);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.personal-item p {
+    color: var(--primary);
+    line-height: 1.7;
+    font-size: 1.05rem;
+}
+
+.social-links {
+    text-align: center;
+    background: var(--white);
+    padding: 3rem;
+    border-radius: 16px;
+    box-shadow: var(--shadow-md);
+}
+
+.social-links h3 {
+    font-family: var(--font-display);
+    color: var(--accent);
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+    font-weight: 600;
+}
+
+.social-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.social-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem 2rem;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.05rem;
+    transition: var(--transition);
+    box-shadow: var(--shadow-sm);
+}
+
+.social-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-lg);
+}
+
+.etsy-btn {
+    background: linear-gradient(135deg, #f1641e 0%, #d84315 100%);
+    color: var(--white);
+}
+
+.etsy-btn:hover {
+    background: linear-gradient(135deg, #d84315 0%, #f1641e 100%);
+}
+
+.instagram-btn {
+    background: linear-gradient(135deg, #833ab4 0%, #fd1d1d 50%, #fcb045 100%);
+    color: var(--white);
+}
+
+.instagram-btn:hover {
+    background: linear-gradient(135deg, #fcb045 0%, #fd1d1d 50%, #833ab4 100%);
+}
+
+.social-btn svg {
+    flex-shrink: 0;
+}
+
+/* ========================================
    CONTACT SECTION
    ======================================== */
 
