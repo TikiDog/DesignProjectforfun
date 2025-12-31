@@ -4,13 +4,24 @@ This repository contains my professional graphic design portfolio, converted fro
 
 ## 🌐 View My Portfolio Online
 
-**Click here to view the live portfolio:**
+### **Option 1: Direct GitHub View**
+1. Go to the repository: https://github.com/TikiDog/DesignProjectforfun
+2. Switch to branch: `claude/pdf-to-html-portfolio-Stm1i`
+3. Click on `index.html` file
+4. Look for the "Preview" tab or download the repository
 
-👉 [**View Portfolio**](https://htmlpreview.github.io/?https://github.com/TikiDog/DesignProjectforfun/blob/claude/pdf-to-html-portfolio-Stm1i/index.html)
+### **Option 2: Download and View Locally**
+1. Click the green **"Code"** button above
+2. Select **"Download ZIP"**
+3. Extract the ZIP file
+4. Open `index.html` in your web browser
 
-**Alternative link:**
+### **Option 3: HTML Preview Services**
+Try these preview links:
 
-👉 [**View Portfolio (Alternative)**](https://raw.githack.com/TikiDog/DesignProjectforfun/claude/pdf-to-html-portfolio-Stm1i/index.html)
+👉 [**View Portfolio (HTMLPreview)**](https://htmlpreview.github.io/?https://github.com/TikiDog/DesignProjectforfun/blob/claude/pdf-to-html-portfolio-Stm1i/index.html)
+
+👉 [**View Portfolio (RawGit)**](https://raw.githack.com/TikiDog/DesignProjectforfun/claude/pdf-to-html-portfolio-Stm1i/index.html)
 
 ## 📁 Files in This Repository
 
