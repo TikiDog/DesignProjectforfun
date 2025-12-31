@@ -792,6 +792,15 @@ section h2::after {
     box-shadow: var(--shadow-lg);
 }
 
+.linkedin-btn {
+    background: linear-gradient(135deg, #0077b5 0%, #005582 100%);
+    color: var(--white);
+}
+
+.linkedin-btn:hover {
+    background: linear-gradient(135deg, #005582 0%, #0077b5 100%);
+}
+
 .etsy-btn {
     background: linear-gradient(135deg, #f1641e 0%, #d84315 100%);
     color: var(--white);
