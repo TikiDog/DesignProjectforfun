@@ -92,14 +92,9 @@ This is your comprehensive guide for all images needed for your portfolio. Take 
 
 | **What to Screenshot from PowerPoint** | **Save As** | **Status** |
 |----------------------------------|-------------|------------|
-| PowerPoint slide example 1 | `slide-1.jpg` | ⬜ Need |
-| PowerPoint slide example 2 | `slide-2.jpg` | ⬜ Need |
-| PowerPoint slide example 3 | `slide-3.jpg` | ⬜ Need |
-| PowerPoint slide example 4 | `slide-4.jpg` | ⬜ Need |
-| PowerPoint slide example 5 | `slide-5.jpg` | ⬜ Need |
-| PowerPoint slide example 6 | `slide-6.jpg` | ⬜ Need |
+| PowerPoint slide sample | `slide-1.jpg` | ✅ Uploaded |
 
-**Tip:** Export your best PowerPoint slides as high-resolution images (1920x1080 or higher) to showcase your presentation design skills.
+**Tip:** Export your best PowerPoint slide as a high-resolution image (1920x1080 or higher) to showcase your presentation design skills.
 
 ---
 
@@ -120,9 +115,9 @@ This is your comprehensive guide for all images needed for your portfolio. Take 
 
 ## 📋 **Quick Summary**
 
-**Total Images Needed:** 50 images
+**Total Images Needed:** 45 images
 - ✅ **Already Uploaded:** 2 images
-- ⬜ **Still Need:** 48 images
+- ⬜ **Still Need:** 43 images
 
 ---
 

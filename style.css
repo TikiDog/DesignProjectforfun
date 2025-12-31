@@ -116,6 +116,7 @@ body {
     position: relative;
     transition: var(--transition);
     letter-spacing: 0.3px;
+    line-height: 1;
 }
 
 .nav-menu a::after {
