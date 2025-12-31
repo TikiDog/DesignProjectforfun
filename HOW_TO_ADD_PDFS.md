@@ -7,7 +7,7 @@ Your portfolio has a `/pdfs` folder where you can upload full project PDFs.
 ## ✅ **Benefits of Adding PDFs:**
 
 1. **Professional Presentation** - Shows your complete work in detail
-2. **Downloadable** - Potential clients/employers can save your work
+2. **View in Browser** - Opens directly in browser for easy viewing
 3. **High Quality** - Original resolution and layout preserved
 4. **Portfolio Depth** - Images give overview, PDFs give full details
 
@@ -70,9 +70,10 @@ Each project section can have a beautiful gradient button:
 **"View Full Project (PDF)"**
 
 When clicked:
-- Opens PDF in new tab (desktop)
-- Downloads PDF (mobile)
-- Shows full professional work
+- **Opens PDF directly in your browser** (new tab)
+- Works on desktop, tablet, and mobile
+- Viewers can scroll through the full project
+- No download required - just instant viewing!
 
 ---
 
@@ -100,11 +101,12 @@ When clicked:
 Want to add PDF buttons to other projects? Copy this HTML:
 
 ```html
-<div class="pdf-download">
+<div class="pdf-viewer">
     <a href="pdfs/your-project-name.pdf" target="_blank" class="btn-pdf">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
             <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" stroke="currentColor" stroke-width="2"/>
-            <path d="M14 2v6h6M12 18v-6M9 15l3 3 3-3" stroke="currentColor" stroke-width="2"/>
+            <path d="M14 2v6h6" stroke="currentColor" stroke-width="2"/>
+            <circle cx="12" cy="14" r="3" stroke="currentColor" stroke-width="2"/>
         </svg>
         View Full Project (PDF)
     </a>

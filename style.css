@@ -487,8 +487,8 @@ section h2::after {
     transform: scale(1.02);
 }
 
-/* PDF Download Buttons */
-.pdf-download {
+/* PDF Viewer Buttons */
+.pdf-viewer {
     margin-top: 2rem;
     text-align: center;
 }
