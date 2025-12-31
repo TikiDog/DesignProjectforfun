@@ -222,7 +222,7 @@ body {
     font-family: var(--font-display);
     font-size: clamp(3.5rem, 8vw, 6.5rem);
     font-weight: 900;
-    line-height: 1.1;
+    line-height: 0.95;
     margin-bottom: 1.5rem;
     letter-spacing: -2px;
 }
@@ -312,6 +312,7 @@ section h2 {
     text-align: center;
     margin-bottom: 1rem;
     letter-spacing: -1px;
+    line-height: 1.05;
     position: relative;
     display: inline-block;
     left: 50%;
@@ -346,6 +347,7 @@ section h2::after {
     margin: 4rem 0 2.5rem;
     text-align: center;
     font-weight: 600;
+    line-height: 1.15;
 }
 
 /* ========================================
@@ -374,6 +376,7 @@ section h2::after {
     margin: 2.5rem 0 1.25rem;
     font-size: 1.75rem;
     font-weight: 600;
+    line-height: 1.2;
 }
 
 .about-content ul {
@@ -584,6 +587,7 @@ section h2::after {
     font-size: 2rem;
     margin-bottom: 1.5rem;
     font-weight: 600;
+    line-height: 1.15;
 }
 
 .project-showcase p {
@@ -660,6 +664,7 @@ section h2::after {
     font-size: 1.5rem;
     margin-bottom: 1.25rem;
     font-weight: 600;
+    line-height: 1.2;
 }
 
 .project-card p {
@@ -743,6 +748,7 @@ section h2::after {
     font-size: 1.5rem;
     margin-bottom: 1rem;
     font-weight: 600;
+    line-height: 1.2;
 }
 
 .personal-item p {
@@ -765,6 +771,7 @@ section h2::after {
     font-size: 1.75rem;
     margin-bottom: 2rem;
     font-weight: 600;
+    line-height: 1.2;
 }
 
 .social-buttons {
