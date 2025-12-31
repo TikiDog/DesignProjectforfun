@@ -150,3 +150,69 @@ createMobileMenu();
 
 // Log page load
 console.log('Sherry Jennings Portfolio - Loaded Successfully');
+
+// ========================================
+// IMAGE LIGHTBOX FUNCTIONALITY
+// ========================================
+
+// Create lightbox element
+const createLightbox = () => {
+    const lightbox = document.createElement('div');
+    lightbox.className = 'lightbox';
+    lightbox.innerHTML = `
+        <div class="lightbox-content">
+            <button class="lightbox-close" aria-label="Close lightbox">&times;</button>
+            <img src="" alt="">
+            <div class="lightbox-caption"></div>
+        </div>
+    `;
+    document.body.appendChild(lightbox);
+    return lightbox;
+};
+
+// Initialize lightbox
+const lightbox = createLightbox();
+const lightboxImg = lightbox.querySelector('img');
+const lightboxCaption = lightbox.querySelector('.lightbox-caption');
+const lightboxClose = lightbox.querySelector('.lightbox-close');
+
+// Open lightbox
+const openLightbox = (imgSrc, imgAlt) => {
+    lightboxImg.src = imgSrc;
+    lightboxCaption.textContent = imgAlt;
+    lightbox.classList.add('active');
+    document.body.style.overflow = 'hidden'; // Prevent background scrolling
+};
+
+// Close lightbox
+const closeLightbox = () => {
+    lightbox.classList.remove('active');
+    document.body.style.overflow = ''; // Restore scrolling
+};
+
+// Add click handlers to all portfolio images
+document.querySelectorAll('.portfolio-image').forEach(img => {
+    img.addEventListener('click', (e) => {
+        // Only open if image loaded successfully
+        if (!img.parentElement.classList.contains('no-image')) {
+            openLightbox(img.src, img.alt);
+        }
+    });
+});
+
+// Close lightbox on close button click
+lightboxClose.addEventListener('click', closeLightbox);
+
+// Close lightbox when clicking outside the image
+lightbox.addEventListener('click', (e) => {
+    if (e.target === lightbox) {
+        closeLightbox();
+    }
+});
+
+// Close lightbox on Escape key
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && lightbox.classList.contains('active')) {
+        closeLightbox();
+    }
+});
