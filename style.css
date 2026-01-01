@@ -521,6 +521,20 @@ section h2::after {
     cursor: zoom-in;
 }
 
+/* PDF linked images */
+.gallery-item a[href$=".pdf"] {
+    display: block;
+    text-decoration: none;
+}
+
+.gallery-item a[href$=".pdf"] .portfolio-image {
+    cursor: pointer;
+}
+
+.gallery-item a[href$=".pdf"]:hover .portfolio-image {
+    opacity: 0.9;
+}
+
 /* Single large image display */
 .project-image-large {
     width: 100%;

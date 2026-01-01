@@ -193,8 +193,13 @@ const closeLightbox = () => {
 // Add click handlers to all portfolio images
 document.querySelectorAll('.portfolio-image').forEach(img => {
     img.addEventListener('click', (e) => {
+        // Skip if image is inside a link (for PDF links)
+        if (img.closest('a[href$=".pdf"]')) {
+            return;
+        }
         // Only open if image loaded successfully
         if (!img.parentElement.classList.contains('no-image')) {
+            e.preventDefault();
             openLightbox(img.src, img.alt);
         }
     });
