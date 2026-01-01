@@ -943,6 +943,13 @@ footer p {
     letter-spacing: 0.5px;
 }
 
+.footer-note {
+    margin-top: 0.5rem !important;
+    font-size: 0.75rem !important;
+    opacity: 0.7;
+    font-style: italic;
+}
+
 /* ========================================
    RESPONSIVE DESIGN
    ======================================== */
