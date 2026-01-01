@@ -113,11 +113,26 @@ This is your comprehensive guide for all images needed for your portfolio. Take 
 
 ---
 
+## 📁 **FOLDER 8: Dog Photography** (`/images/dog-photography/`)
+
+| **Your Dog Photos** | **Save As** | **Status** |
+|----------------------------------|-------------|------------|
+| Dog photo 1 | `dog-1.jpg` | ⬜ Need |
+| Dog photo 2 | `dog-2.jpg` | ⬜ Need |
+| Dog photo 3 | `dog-3.jpg` | ⬜ Need |
+| Dog photo 4 | `dog-4.jpg` | ⬜ Need |
+| Dog photo 5 | `dog-5.jpg` | ⬜ Need |
+| Dog photo 6 | `dog-6.jpg` | ⬜ Need |
+
+**Tip:** Upload your best dog photography images! These will showcase your photography skills and add a personal touch to your portfolio.
+
+---
+
 ## 📋 **Quick Summary**
 
-**Total Images Needed:** 45 images
+**Total Images Needed:** 51 images
 - ✅ **Already Uploaded:** 2 images
-- ⬜ **Still Need:** 43 images
+- ⬜ **Still Need:** 49 images
 
 ---
 
