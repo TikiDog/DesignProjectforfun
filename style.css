@@ -720,6 +720,75 @@ section h2::after {
 }
 
 /* ========================================
+   BEFORE AND AFTER SECTION
+   ======================================== */
+
+.before-after-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.before-after-item {
+    background: var(--white);
+    border-radius: 12px;
+    padding: 2.5rem;
+    box-shadow: var(--shadow-md);
+}
+
+.before-after-item h3 {
+    color: var(--primary);
+    margin-bottom: 0.75rem;
+    font-size: 1.75rem;
+}
+
+.before-after-item > p {
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
+    font-size: 1.05rem;
+}
+
+.before-after-images {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.comparison-image {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+}
+
+.comparison-image:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.comparison-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    cursor: pointer;
+}
+
+.image-label {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    background: rgba(30, 58, 95, 0.9);
+    color: var(--white);
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+/* ========================================
    PERSONAL SECTION
    ======================================== */
 
@@ -1031,6 +1100,14 @@ footer p {
     .project-card,
     .project-showcase {
         padding: 2rem;
+    }
+
+    .before-after-item {
+        padding: 1.5rem;
+    }
+
+    .before-after-images {
+        grid-template-columns: 1fr;
     }
 }
 
