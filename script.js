@@ -105,48 +105,33 @@ document.querySelectorAll('.project-card, .project-showcase').forEach(el => {
     observer.observe(el);
 });
 
-// Mobile menu toggle (for future enhancement)
-const createMobileMenu = () => {
-    const navMenu = document.querySelector('.nav-menu');
-    const menuToggle = document.createElement('button');
-    menuToggle.innerHTML = '☰';
-    menuToggle.setAttribute('class', 'menu-toggle');
-    menuToggle.style.cssText = `
-        display: none;
-        background: none;
-        border: none;
-        color: white;
-        font-size: 2rem;
-        cursor: pointer;
-    `;
+// Mobile menu toggle
+const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+const navMenu = document.querySelector('.nav-menu');
 
-    const navbar = document.querySelector('.navbar .container');
-    navbar.insertBefore(menuToggle, navMenu);
+if (mobileMenuToggle) {
+    mobileMenuToggle.addEventListener('click', () => {
+        mobileMenuToggle.classList.toggle('active');
+        navMenu.classList.toggle('active');
+    });
 
-    // Show menu toggle on mobile
-    const checkWidth = () => {
-        if (window.innerWidth <= 768) {
-            menuToggle.style.display = 'block';
-        } else {
-            menuToggle.style.display = 'none';
-            navMenu.style.display = 'flex';
-        }
-    };
+    // Close menu when a link is clicked
+    const navLinks = document.querySelectorAll('.nav-menu a');
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            mobileMenuToggle.classList.remove('active');
+            navMenu.classList.remove('active');
+        });
+    });
 
-    checkWidth();
-    window.addEventListener('resize', checkWidth);
-
-    menuToggle.addEventListener('click', () => {
-        if (navMenu.style.display === 'none' || navMenu.style.display === '') {
-            navMenu.style.display = 'flex';
-        } else {
-            navMenu.style.display = 'none';
+    // Close menu when clicking outside
+    document.addEventListener('click', (e) => {
+        if (!e.target.closest('.navbar')) {
+            mobileMenuToggle.classList.remove('active');
+            navMenu.classList.remove('active');
         }
     });
-};
-
-// Initialize mobile menu
-createMobileMenu();
+}
 
 // Log page load
 console.log('Sherry Jennings Portfolio - Loaded Successfully');
