@@ -1144,6 +1144,139 @@ footer p {
     .project-showcase {
         padding: 1.5rem;
     }
+
+    .tagline {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    .title-stack {
+        align-items: center;
+    }
+
+    .contact-link {
+        font-size: 0.9rem;
+        padding: 0.9rem 1.5rem;
+    }
+
+    .image-gallery {
+        gap: 1.5rem;
+    }
+
+    .btn-pdf {
+        font-size: 0.95rem;
+        padding: 0.8rem 1.5rem;
+    }
+}
+
+/* iPhone and Mobile Specific Improvements */
+@media (max-width: 414px) {
+    body {
+        font-size: 16px; /* Prevents iOS zoom on input focus */
+    }
+
+    .navbar {
+        position: sticky;
+    }
+
+    .nav-menu {
+        font-size: 0.9rem;
+        gap: 1rem;
+    }
+
+    .nav-menu a {
+        padding: 0.5rem 0;
+        display: block;
+    }
+
+    .hero {
+        padding: 4rem 16px 3rem;
+    }
+
+    .hero h1 {
+        font-size: 2.25rem;
+        line-height: 1;
+    }
+
+    .profile-photo {
+        width: 120px;
+        height: 120px;
+    }
+
+    section {
+        padding: 3rem 16px;
+    }
+
+    section h2 {
+        font-size: 1.75rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .section-intro {
+        font-size: 1rem;
+    }
+
+    .image-gallery {
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+    }
+
+    .gallery-item {
+        min-height: 200px;
+    }
+
+    .image-caption {
+        font-size: 0.85rem;
+        padding: 0.75rem;
+    }
+
+    .project-card h3,
+    .before-after-item h3 {
+        font-size: 1.35rem;
+    }
+
+    .project-card,
+    .before-after-item {
+        padding: 1.25rem;
+    }
+
+    .personal-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .personal-icon {
+        font-size: 2.5rem;
+    }
+
+    .social-btn {
+        font-size: 0.9rem;
+        padding: 0.85rem 1.5rem;
+    }
+
+    /* Better touch targets */
+    a, button {
+        min-height: 44px;
+        min-width: 44px;
+    }
+
+    /* Prevent horizontal scroll */
+    .container {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    /* Make lightbox work better on mobile */
+    .lightbox-content img {
+        max-width: 95%;
+        max-height: 80vh;
+    }
+
+    .lightbox-close {
+        width: 50px;
+        height: 50px;
+        font-size: 2.5rem;
+    }
 }
 
 /* ========================================
