@@ -98,7 +98,22 @@ This is your comprehensive guide for all images needed for your portfolio. Take 
 
 ---
 
-## 📁 **FOLDER 7: Before & After** (`/images/before-after/`)
+## 📁 **FOLDER 7: Adobe Firefly** (`/images/firefly/`)
+
+| **Your Firefly Creations** | **Save As** | **Status** |
+|----------------------------------|-------------|------------|
+| Firefly example 1 | `firefly-1.jpg` | ⬜ Need |
+| Firefly example 2 | `firefly-2.jpg` | ⬜ Need |
+| Firefly example 3 | `firefly-3.jpg` | ⬜ Need |
+| Firefly example 4 | `firefly-4.jpg` | ⬜ Need |
+| Firefly example 5 | `firefly-5.jpg` | ⬜ Need |
+| Firefly example 6 | `firefly-6.jpg` | ⬜ Need |
+
+**Tip:** Upload your best Adobe Firefly AI-generated images! These showcase your experimentation with the latest Adobe AI tools.
+
+---
+
+## 📁 **FOLDER 8: Before & After** (`/images/before-after/`)
 
 | **What to Screenshot from PDF** | **Save As** | **Status** |
 |----------------------------------|-------------|------------|
@@ -113,7 +128,7 @@ This is your comprehensive guide for all images needed for your portfolio. Take 
 
 ---
 
-## 📁 **FOLDER 8: Pet Photography** (`/images/pet-photography/`)
+## 📁 **FOLDER 9: Pet Photography** (`/images/pet-photography/`)
 
 | **Your Pet Photos** | **Save As** | **Status** |
 |----------------------------------|-------------|------------|
@@ -130,9 +145,9 @@ This is your comprehensive guide for all images needed for your portfolio. Take 
 
 ## 📋 **Quick Summary**
 
-**Total Images Needed:** 51 images
+**Total Images Needed:** 57 images
 - ✅ **Already Uploaded:** 2 images
-- ⬜ **Still Need:** 49 images
+- ⬜ **Still Need:** 55 images (including 6 Adobe Firefly examples)
 
 ---
 
