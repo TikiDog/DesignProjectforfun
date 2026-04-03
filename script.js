@@ -137,6 +137,68 @@ if (mobileMenuToggle) {
 console.log('Sherry Jennings Portfolio - Loaded Successfully');
 
 // ========================================
+// PDF LIGHTBOX FUNCTIONALITY
+// ========================================
+
+// Create PDF lightbox element
+const createPdfLightbox = () => {
+    const pdfLightbox = document.createElement('div');
+    pdfLightbox.className = 'pdf-lightbox';
+    pdfLightbox.innerHTML = `
+        <div class="pdf-lightbox-content">
+            <button class="pdf-lightbox-close" aria-label="Close PDF viewer">&times;</button>
+            <iframe src="" title="PDF Viewer"></iframe>
+        </div>
+    `;
+    document.body.appendChild(pdfLightbox);
+    return pdfLightbox;
+};
+
+// Initialize PDF lightbox
+const pdfLightbox = createPdfLightbox();
+const pdfIframe = pdfLightbox.querySelector('iframe');
+const pdfLightboxClose = pdfLightbox.querySelector('.pdf-lightbox-close');
+
+// Open PDF lightbox
+const openPdfLightbox = (pdfUrl) => {
+    pdfIframe.src = pdfUrl;
+    pdfLightbox.classList.add('active');
+    document.body.style.overflow = 'hidden'; // Prevent background scrolling
+};
+
+// Close PDF lightbox
+const closePdfLightbox = () => {
+    pdfLightbox.classList.remove('active');
+    pdfIframe.src = ''; // Clear iframe to stop loading
+    document.body.style.overflow = ''; // Restore scrolling
+};
+
+// Add click handlers to all PDF links
+document.querySelectorAll('a[href$=".pdf"]').forEach(link => {
+    link.addEventListener('click', (e) => {
+        e.preventDefault();
+        openPdfLightbox(link.href);
+    });
+});
+
+// Close PDF lightbox on close button click
+pdfLightboxClose.addEventListener('click', closePdfLightbox);
+
+// Close PDF lightbox when clicking outside the iframe
+pdfLightbox.addEventListener('click', (e) => {
+    if (e.target === pdfLightbox) {
+        closePdfLightbox();
+    }
+});
+
+// Close PDF lightbox on Escape key
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && pdfLightbox.classList.contains('active')) {
+        closePdfLightbox();
+    }
+});
+
+// ========================================
 // IMAGE LIGHTBOX FUNCTIONALITY
 // ========================================
 
