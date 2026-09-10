@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sherry Jennings | Graphic Designer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Decorative Background Elements -->
+    <div class="bg-decoration"></div>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="#about">About</a></li>
+                <li><a href="#event-design">Event Design</a></li>
+                <li><a href="#production">Production & Design</a></li>
+                <li><a href="#posters">Posters</a></li>
+                <li><a href="#interactive">Interactive PDFs</a></li>
+                <li><a href="#digital">Digital Marketing</a></li>
+                <li><a href="#powerpoint">PowerPoint Graphics</a></li>
+                <li><a href="#firefly">Adobe Firefly</a></li>
+                <li><a href="#pet-photography">Pet Photography</a></li>
+                <li><a href="#personal">Discover Sherry</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1><span class="highlight">Sherry</span> Jennings</h1>
+                    <h2 class="hero-subtitle">Lead Senior Graphic Designer</h2>
+                    <p class="hero-tagline">Marketing communications specialist with expertise in all forms and functions of design.</p>
+                <div class="hero-cta">
+                    <a href="#featured" class="btn-primary">View My Work</a>
+                    <button class="btn-secondary" id="contactPopupBtn">Get In Touch</button>
+                </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Featured Work Section -->
+    <section id="featured" class="featured-section">
+        <div class="container">
+            <h2>Featured Work</h2>
+
+            <div class="featured-grid">
+                <a href="#event-design" class="featured-item">
+                    <img src="images/event-design/sinet-cover.jpg" alt="SINET Showcase 2016" class="featured-image" onerror="this.parentElement.classList.add('no-image')">
+                    <div class="featured-overlay">
+                        <h3>Event Design</h3>
+                        <p>SINET Showcase Program</p>
+                    </div>
+                </a>
+
+                <a href="#production" class="featured-item">
+                    <img src="images/production/adobe-forms-maturity-model.jpg" alt="Adobe Forms Guide" class="featured-image" onerror="this.parentElement.classList.add('no-image')">
+                    <div class="featured-overlay">
+                        <h3>Production & Design</h3>
+                        <p>Adobe Digital Maturity Model</p>
+                    </div>
+                </a>
+
+                <a href="#interactive" class="featured-item">
+                    <img src="images/interactive-pdfs/juniper-automation-matrix.jpg" alt="Interactive PDF" class="featured-image" onerror="this.parentElement.classList.add('no-image')">
+                    <div class="featured-overlay">
+                        <h3>Interactive PDFs</h3>
+                        <p>Juniper Automation Matrix</p>
+                    </div>
+                </a>
+
+                <a href="#before-after" class="featured-item">
+                    <img src="images/before-after/cisco-ucs-after.jpg" alt="Before & After" class="featured-image" onerror="this.parentElement.classList.add('no-image')">
+                    <div class="featured-overlay">
+                        <h3>Before & After</h3>
+                        <p>Document Transformations</p>
+                    </div>
+                </a>
+
+                <a href="#posters" class="featured-item">
+                    <img src="images/posters/cisco-cybersecurity.jpg" alt="Poster Design" class="featured-image" onerror="this.parentElement.classList.add('no-image')">
+                    <div class="featured-overlay">
+                        <h3>Poster Design</h3>
+                        <p>Cisco Cybersecurity</p>
+                    </div>
+                </a>
+
+                <a href="#digital" class="featured-item">
+                    <img src="images/digital-marketing/webex-day-in-life.jpg" alt="Infographic" class="featured-image" onerror="this.parentElement.classList.add('no-image')">
+                    <div class="featured-overlay">
+                        <h3>Digital Marketing</h3>
+                        <p>Webex Teams Infographic</p>
+                    </div>
+                </a>
+
+                <a href="#firefly" class="featured-item">
+                    <img src="images/firefly/firefly-1.jpg" alt="Adobe Firefly" class="featured-image" onerror="this.parentElement.classList.add('no-image')">
+                    <div class="featured-overlay">
+                        <h3>Adobe Firefly</h3>
+                        <p>AI-Generated Design</p>
+                    </div>
+                </a>
+
+                <a href="#interactive" class="featured-item">
+                    <img src="images/interactive-pdfs/cisco-telepresence-guide.jpg" alt="User Guide" class="featured-image" onerror="this.parentElement.classList.add('no-image')">
+                    <div class="featured-overlay">
+                        <h3>User Guides</h3>
+                        <p>Cisco TelePresence</p>
+                    </div>
+                </a>
+
+                <a href="#pet-photography" class="featured-item">
+                    <img src="images/pet-photography/pet-1.jpg" alt="Photography" class="featured-image" onerror="this.parentElement.classList.add('no-image')">
+                    <div class="featured-overlay">
+                        <h3>Photography</h3>
+                        <p>Creative Portfolio</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <p class="about-lead">20+ years transforming technical content into intuitive, on-brand digital products for Fortune 500 clients and the U.S. Military.</p>
+
+                <div class="portfolio-note">
+                    <p><strong>Why you see older samples:</strong> For the past 7 years, I've been creating classified interactive training applications for the U.S. Military. My portfolio stopped in 2019, but my expertise didn't—it just went behind a security clearance.</p>
+                    <p>These samples show where I started. They don't show the complex, long-form apps I build today using InDesign's advanced interactive features, MSOs, and engaging UI experiences.</p>
+                </div>
+
+                <h3>What I Do Best</h3>
+                <ul>
+                    <li><strong>InDesign Expert:</strong> Interactive PDFs, ePubs, branding, and long-form layouts</li>
+                    <li><strong>UI/UX Design:</strong> User-focused interfaces for mobile training apps</li>
+                    <li><strong>Brand Stewardship:</strong> Consistent guidelines across all touchpoints</li>
+                    <li><strong>Team Leadership:</strong> Mentoring designers and managing multiple projects</li>
+                    <li><strong>Process Innovation:</strong> Finding smarter workflows (currently mastering Figma & Claude Code)</li>
+                </ul>
+
+                <h3>Experience Highlights</h3>
+                <p><strong>StartGuides (7 years):</strong> Lead App Designer for U.S. Military interactive training applications</p>
+                <p><strong>Envision Technology Marketing Group (15 years):</strong> Senior Production Graphic Artist for Cisco, Adobe, Intel, Oracle, McAfee, and NVIDIA</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Production and Design Section -->
+    <section id="event-design" class="portfolio-section">
+        <div class="container">
+            <h2>Event Production and Design</h2>
+            <p class="section-intro">This document started with a raw Word file and a Brand Guide. SINET was on a tight deadline, and edits were fast and furious. This document was re-paginated several times before going to print.</p>
+
+            <div class="project-showcase">
+                <h3>SINET Showcase 2016</h3>
+
+                <!-- Image Gallery -->
+                <div class="image-gallery">
+                    <div class="gallery-item">
+                        <img src="images/event-design/sinet-cover.jpg" alt="SINET Showcase 2016 Cover" class="portfolio-image" onerror="this.parentElement.classList.add('no-image')">
+                        <div class="image-caption">Event Guide Cover</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/event-design/sinet-schedule.jpg" alt="SINET Event Schedule" class="portfolio-image" onerror="this.parentElement.classList.add('no-image')">
+                        <div class="image-caption">Program Schedule</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/event-design/sinet-presenters.jpg" alt="SINET 16 Presenters" class="portfolio-image" onerror="this.parentElement.classList.add('no-image')">
+                        <div class="image-caption">Presenter Profiles</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/event-design/sinet-poster.jpg" alt="SINET Event Poster" class="portfolio-image" onerror="this.parentElement.classList.add('no-image')">
+                        <div class="image-caption">Event Poster</div>
+                    </div>
+                </div>
+
+                <p><strong>Event:</strong> SINET Showcase & Workshops 2016</p>
+                <p><strong>Location:</strong> The National Press Club, Washington, D.C.</p>
+                <p><strong>Date:</strong> November 2 & 3, 2016</p>
+                <p><strong>Supported by:</strong> US Department of Homeland Security Science & Technology Directorate</p>
+
+                <div class="project-description">
+                    <p>This comprehensive event guide included:</p>
+                    <ul>
+                        <li>Complete program schedule and workshop details</li>
+                        <li>SINET 16 Innovator presentations and profiles</li>
+                        <li>Panel discussions on Cybernomics and Internet security</li>
+                        <li>Networking events and exhibitor information</li>
+                    </ul>
+                    <p>Content from the booklet was used to create event posters and supporting materials.</p>
+
+                    <!-- View PDF in Browser -->
+                    <div class="pdf-viewer">
+                        <a href="pdfs/sinet-showcase-2016.pdf" class="btn-pdf">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" stroke="currentColor" stroke-width="2"/>
+                                <path d="M14 2v6h6" stroke="currentColor" stroke-width="2"/>
+                                <circle cx="12" cy="14" r="3" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                            View PDF
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Production, Design, and Illustrations Section -->
+    <section id="production" class="portfolio-section alt-bg">
+        <div class="container">
+            <h2>Production, Design, and Illustrations</h2>
+            <p class="section-intro">I had a loose template and guidelines to follow for these brochures. I created everything you see in the guides including illustrations.</p>
+
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Adobe Forms Digital Maturity Model</h3>
+                    <p>Comprehensive guide on digital forms transformation for governments and regulated businesses including:</p>
+                    <ul>
+                        <li>Digital transformation strategies</li>
+                        <li>Customer experience optimization</li>
+                        <li>Integration and automation processes</li>
+                        <li>Maturity model frameworks</li>
+                    </ul>
+                    <div class="pdf-viewer">
+                        <a href="pdfs/Adobe_AEM Forms Maturity Model.pdf" class="btn-pdf">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" stroke="currentColor" stroke-width="2"/>
+                                <path d="M14 2v6h6" stroke="currentColor" stroke-width="2"/>
+                                <circle cx="12" cy="14" r="3" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                            View PDF
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3>Cisco Digital Transformation</h3>
+                    <p>Technical documentation for oil and gas companies featuring:</p>
+                    <ul>
+                        <li>Cisco HyperFlex platform capabilities</li>
+                        <li>Infrastructure modernization strategies</li>
+                        <li>Cloud integration solutions</li>
+                        <li>Custom diagrams and infographics</li>
+                    </ul>
+                    <div class="pdf-viewer">
+                        <a href="pdfs/Cisco_Chevron_Brochure.pdf" class="btn-pdf">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" stroke="currentColor" stroke-width="2"/>
+                                <path d="M14 2v6h6" stroke="currentColor" stroke-width="2"/>
+                                <circle cx="12" cy="14" r="3" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                            View PDF
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3>Adobe Acrobat DC Sales Guide</h3>
+                    <p>Sales conversation guide including:</p>
+                    <ul>
+                        <li>Four-step sales process framework</li>
+                        <li>Value proposition messaging</li>
+                        <li>Discovery questions and tools</li>
+                        <li>Enterprise feature highlights</li>
+                    </ul>
+                    <div class="pdf-viewer">
+                        <a href="pdfs/acor-dc-ent_conv guide.pdf" class="btn-pdf">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" stroke="currentColor" stroke-width="2"/>
+                                <path d="M14 2v6h6" stroke="currentColor" stroke-width="2"/>
+                                <circle cx="12" cy="14" r="3" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                            View PDF
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3>IXIA - The ABCs of Inline Security</h3>
+                    <p>Technical guide with client-provided templates featuring:</p>
+                    <ul>
+                        <li>Custom illustrations and diagrams</li>
+                        <li>Security monitoring concepts</li>
+                        <li>Bypass switches and failover systems</li>
+                        <li>Print-ready PDF with crops and bleeds</li>
+                    </ul>
+                    <div class="pdf-viewer">
+                        <a href="pdfs/IXIA_ABCs of Inline Security.pdf" class="btn-pdf">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" stroke="currentColor" stroke-width="2"/>
+                                <path d="M14 2v6h6" stroke="currentColor" stroke-width="2"/>
+                                <circle cx="12" cy="14" r="3" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                            View PDF
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Posters Section -->
+    <section id="posters" class="portfolio-section">
+        <div class="container">
+            <h2>Production and Design of Posters</h2>
+
+            <div class="image-gallery">
+                <div class="gallery-item">
+                    <img src="images/posters/ey-video-conferencing.jpg" alt="EY Video Conferencing Campaign" class="portfolio-image" onerror="this.parentElement.classList.add('no-image')">
+                    <div class="image-caption">Video Conferencing Campaign - EY</div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/posters/mt-bank-webex.jpg" alt="M&T Bank Webex Poster" class="portfolio-image" onerror="this.parentElement.classList.add('no-image')">
+                    <div class="image-caption">Webex Meetings - M&T Bank</div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/posters/idb-comunity.jpg" alt="IDB COMUnity Poster" class="portfolio-image" onerror="this.parentElement.classList.add('no-image')">
+                    <div class="image-caption">COMUnity - IDB Headquarters</div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/posters/visa-telepresence.jpg" alt="VISA TelePresence Poster" class="portfolio-image" onerror="this.parentElement.classList.add('no-image')">
+                    <div class="image-caption">TelePresence - VISA</div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/posters/cisco-cybersecurity.jpg" alt="Cisco Cybersecurity Poster" class="portfolio-image" onerror="this.parentElement.classList.add('no-image')">
+                    <div class="image-caption">Cisco Cybersecurity</div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/posters/ixia-inline-security.jpg" alt="IXIA Inline Security Poster" class="portfolio-image" onerror="this.parentElement.classList.add('no-image')">
+                    <div class="image-caption">IXIA - ABCs of Inline Security</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive PDFs Section -->
+    <section id="interactive" class="portfolio-section alt-bg">
+        <div class="container">
+            <h2>Production and Design of Interactive PDFs</h2>
+
+            <div class="image-gallery">
+                <div class="gallery-item">
+                    <a href="pdfs/Juniper_Compatibility_Matrix.pdf">
+                        <img src="images/interactive-pdfs/juniper-automation-matrix.jpg" alt="Juniper Automation Tool Matrix" class="portfolio-image" onerror="this.parentElement.classList.add('no-image')">
+                    </a>
+                    <div class="image-caption">Juniper Automation Tool Matrix</div>
+                    <a href="pdfs/Juniper_Compatibility_Matrix.pdf" class="btn-pdf">View PDF</a>
+                </div>
+
+                <div class="gallery-item">
+                    <a href="pdfs/Cisco_TP_user-guide.pdf">
+                        <img src="images/interactive-pdfs/cisco-telepresence-guide.jpg" alt="Cisco TelePresence User Guide" class="portfolio-image" onerror="this.parentElement.classList.add('no-image')">
+                    </a>
+                    <div class="image-caption">Cisco TelePresence User Guides</div>
+                    <a href="pdfs/Cisco_TP_user-guide.pdf" class="btn-pdf">View PDF</a>
+                </div>
+
+                <div class="gallery-item">
+                    <a href="pdfs/SAP_Continuous_Learning WP.pdf">
+                        <img src="images/interactive-pdfs/sap-education-training.jpg" alt="SAP Education Training Materials" class="portfolio-image" onerror="this.parentElement.classList.add('no-image')">
+                    </a>
+                    <div class="image-caption">SAP Education Training Materials</div>
+                    <a href="pdfs/SAP_Continuous_Learning WP.pdf" class="btn-pdf">View PDF</a>
+                </div>
+
+                <div class="gallery-item">
+                    <a href="pdfs/Short_Dow_Interactive_Guide.pdf">
+                        <img src="images/interactive-pdfs/DOW_Interactive_guide.jpg" alt="Dow Chemical Collaboration Guide" class="portfolio-image" onerror="this.parentElement.classList.add('no-image')">
+                    </a>
+                    <div class="image-caption">Dow Chemical Collaboration Guide</div>
+                    <a href="pdfs/Short_Dow_Interactive_Guide.pdf" class="btn-pdf">View PDF</a>
+                </div>
+
+                <div class="gallery-item">
+                    <a href="pdfs/Cisco_Spark_QRG_ebook.pdf">
+                        <img src="images/interactive-pdfs/cisco-spark-reference.jpg" alt="Cisco Spark Quick Reference" class="portfolio-image" onerror="this.parentElement.classList.add('no-image')">
+                    </a>
+                    <div class="image-caption">Cisco Spark Quick Reference</div>
+                    <a href="pdfs/Cisco_Spark_QRG_ebook.pdf" class="btn-pdf">View PDF</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Digital Marketing Section -->
+    <section id="digital" class="portfolio-section">
+        <div class="container">
+            <h2>Digital Marketing Materials</h2>
+
+            <h3 class="subsection-title">Web and Social Media Banners</h3>
+            <div class="image-gallery">
+                <div class="gallery-item">
+                    <img src="images/digital-marketing/polycom-banner.jpg" alt="Polycom Banner" class="portfolio-image" onerror="this.parentElement.classList.add('no-image')">
+                    <div class="image-caption">Polycom - Exceptional Experiences</div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/digital-marketing/envision-social-media.jpg" alt="Envision Marketing Social Media" class="portfolio-image" onerror="this.parentElement.classList.add('no-image')">
+                    <div class="image-caption">Envision Marketing - Social Media Campaigns</div>
+                </div>
+            </div>
+
+            <h3 class="subsection-title">Infographics</h3>
+            <div class="image-gallery">
+                <div class="gallery-item">
+                    <img src="images/digital-marketing/webex-day-in-life.jpg" alt="Webex Teams Day in the Life" class="portfolio-image" onerror="this.parentElement.classList.add('no-image')">
+                    <div class="image-caption">Webex Teams - Day in the Life</div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/digital-marketing/sap-human-revolution.jpg" alt="SAP Human Revolution Infographic" class="portfolio-image" onerror="this.parentElement.classList.add('no-image')">
+                    <div class="image-caption">SAP Human Revolution</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PowerPoint Graphics Section -->
+    <section id="powerpoint" class="portfolio-section alt-bg">
+        <div class="container">
+            <h2>PowerPoint Graphics</h2>
+
+            <div class="image-gallery">
+                <div class="gallery-item">
+                    <img src="images/powerpoint/slide-1.jpg" alt="PowerPoint Graphics Sample" class="portfolio-image" onerror="this.parentElement.classList.add('no-image')">
+                    <div class="image-caption">PowerPoint Graphics Sample</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Adobe Firefly Section -->
+    <section id="firefly" class="portfolio-section">
+        <div class="container">
+            <h2>Adobe Firefly</h2>
+            <p class="section-intro">Currently Experimenting in Adobe Firefly</p>
+
+            <div class="image-gallery">
+                <div class="gallery-item">
+                    <img src="images/firefly/firefly-1.jpg" alt="Adobe Firefly Example 1" class="portfolio-image" onerror="this.parentElement.classList.add('no-image')">
+                    <div class="image-caption">Firefly Example 1</div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/firefly/firefly-2.jpg" alt="Adobe Firefly Example 2" class="portfolio-image" onerror="this.parentElement.classList.add('no-image')">
+                    <div class="image-caption">Firefly Example 2</div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/firefly/firefly-3.jpg" alt="Adobe Firefly Example 3" class="portfolio-image" onerror="this.parentElement.classList.add('no-image')">
+                    <div class="image-caption">Firefly Example 3</div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/firefly/firefly-4.jpg" alt="Adobe Firefly Example 4" class="portfolio-image" onerror="this.parentElement.classList.add('no-image')">
+                    <div class="image-caption">Firefly Example 4</div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/firefly/firefly-5.jpg" alt="Adobe Firefly Example 5" class="portfolio-image" onerror="this.parentElement.classList.add('no-image')">
+                    <div class="image-caption">Firefly Example 5</div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/firefly/firefly-6.jpg" alt="Adobe Firefly Example 6" class="portfolio-image" onerror="this.parentElement.classList.add('no-image')">
+                    <div class="image-caption">Firefly Example 6</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Before and After Section -->
+    <section id="before-after" class="portfolio-section alt-bg">
+        <div class="container">
+            <h2>Before and After Transformations</h2>
+            <p class="section-intro">Examples of document redesigns and improvements</p>
+
+            <div class="before-after-grid">
+                <div class="before-after-item">
+                    <h3>Cisco UCS White Paper</h3>
+                    <p>Transformed from Word template to professional InDesign layout with 100+ edits incorporated</p>
+                    <div class="before-after-images">
+                        <div class="comparison-image">
+                            <img src="images/before-after/cisco-ucs-before.jpg" alt="Cisco UCS Before" class="portfolio-image" onerror="this.parentElement.classList.add('no-image')">
+                            <div class="image-label">Before</div>
+                        </div>
+                        <div class="comparison-image">
+                            <img src="images/before-after/cisco-ucs-after.jpg" alt="Cisco UCS After" class="portfolio-image" onerror="this.parentElement.classList.add('no-image')">
+                            <div class="image-label">After</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="before-after-item">
+                    <h3>BMC Account Based Marketing Primer</h3>
+                    <p>PowerPoint to InDesign transformation for printed booklet format</p>
+                    <div class="before-after-images">
+                        <div class="comparison-image">
+                            <img src="images/before-after/bmc-abm-before.jpg" alt="BMC ABM Before" class="portfolio-image" onerror="this.parentElement.classList.add('no-image')">
+                            <div class="image-label">Before</div>
+                        </div>
+                        <div class="comparison-image">
+                            <img src="images/before-after/bmc-abm-after.jpg" alt="BMC ABM After" class="portfolio-image" onerror="this.parentElement.classList.add('no-image')">
+                            <div class="image-label">After</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="before-after-item">
+                    <h3>SIAA Annual Reports</h3>
+                    <p>Year-over-year design improvements and updates (2017-2018)</p>
+                    <div class="before-after-images">
+                        <div class="comparison-image">
+                            <img src="images/before-after/siaa-report-2017.jpg" alt="SIAA Report 2017" class="portfolio-image" onerror="this.parentElement.classList.add('no-image')">
+                            <div class="image-label">2017</div>
+                        </div>
+                        <div class="comparison-image">
+                            <img src="images/before-after/siaa-report-2018.jpg" alt="SIAA Report 2018" class="portfolio-image" onerror="this.parentElement.classList.add('no-image')">
+                            <div class="image-label">2018</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pet Photography Section -->
+    <section id="pet-photography" class="portfolio-section">
+        <div class="container">
+            <h2>Pet Photography</h2>
+            <p class="section-intro">Capturing the personality and joy of our furry friends</p>
+
+            <div class="image-gallery">
+                <div class="gallery-item">
+                    <img src="images/pet-photography/pet-1.jpg" alt="Pet Photography 1" class="portfolio-image" onerror="this.parentElement.classList.add('no-image')">
+                    <div class="image-caption">Pet Photo 1</div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/pet-photography/pet-2.jpg" alt="Pet Photography 2" class="portfolio-image" onerror="this.parentElement.classList.add('no-image')">
+                    <div class="image-caption">Pet Photo 2</div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/pet-photography/pet-3.jpg" alt="Pet Photography 3" class="portfolio-image" onerror="this.parentElement.classList.add('no-image')">
+                    <div class="image-caption">Pet Photo 3</div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/pet-photography/pet-4.jpg" alt="Pet Photography 4" class="portfolio-image" onerror="this.parentElement.classList.add('no-image')">
+                    <div class="image-caption">Pet Photo 4</div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/pet-photography/pet-5.jpg" alt="Pet Photography 5" class="portfolio-image" onerror="this.parentElement.classList.add('no-image')">
+                    <div class="image-caption">Pet Photo 5</div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/pet-photography/pet-6.jpg" alt="Pet Photography 6" class="portfolio-image" onerror="this.parentElement.classList.add('no-image')">
+                    <div class="image-caption">Pet Photo 6</div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/pet-photography/pet-7.jpg" alt="Pet Photography 7" class="portfolio-image" onerror="this.parentElement.classList.add('no-image')">
+                    <div class="image-caption">Pet Photo 7</div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/pet-photography/pet-8.jpg" alt="Pet Photography 8" class="portfolio-image" onerror="this.parentElement.classList.add('no-image')">
+                    <div class="image-caption">Pet Photo 8</div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/pet-photography/pet-9.jpg" alt="Pet Photography 9" class="portfolio-image" onerror="this.parentElement.classList.add('no-image')">
+                    <div class="image-caption">Pet Photo 9</div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/pet-photography/pet-10.jpg" alt="Pet Photography 10" class="portfolio-image" onerror="this.parentElement.classList.add('no-image')">
+                    <div class="image-caption">Pet Photo 10</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Learn More About Me Section -->
+    <section id="personal" class="personal-section">
+        <div class="container">
+            <h2>Beyond the Design Work</h2>
+            <div class="personal-content">
+                <div class="personal-grid">
+                    <div class="personal-item">
+                        <div class="personal-icon">👩‍👧‍👦</div>
+                        <h3>Proud Mom</h3>
+                        <p>Raising one incredible teenager, one husband, three dogs, and myself</p>
+                    </div>
+
+                    <div class="personal-item">
+                        <div class="personal-icon">🐕</div>
+                        <h3>Dog Sitter</h3>
+                        <p>Running an in-home dog sitting business where furry friends get the royal treatment</p>
+                    </div>
+
+                    <div class="personal-item">
+                        <div class="personal-icon">🎨</div>
+                        <h3>Creative Maker</h3>
+                        <p>Stained glass patterns for beginners drawn in Adobe Illustrator</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Let's Work Together</h2>
+            <p>Marketing communications specialist with expertise in all forms and functions of design</p>
+            <div class="contact-details">
+                <p><strong>Email:</strong> <a href="mailto:sherry.graphicdesign@gmail.com">sherry.graphicdesign@gmail.com</a></p>
+                <p><strong>Phone:</strong> <a href="tel:408-504-4768">(408) 504-4768</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; Sherry Jennings. All rights reserved.</p>
+            <p class="footer-note">This portfolio was created with Claude Code assistance</p>
+        </div>
+    </footer>
+
+    <!-- Sticky Contact Button -->
+    <a href="#contact" class="sticky-contact-btn">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <path d="M3 4h14a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1z" stroke="currentColor" stroke-width="2"/>
+            <path d="M2 5l8 5 8-5" stroke="currentColor" stroke-width="2"/>
+        </svg>
+        Contact Me
+    </a>
+
+    <!-- Contact Popup Modal -->
+    <div id="contactPopup" class="contact-popup">
+        <div class="contact-popup-content">
+            <button class="contact-popup-close" aria-label="Close contact popup">&times;</button>
+            <h2>Get In Touch</h2>
+            <div class="contact-popup-details">
+                <a href="https://www.linkedin.com/in/sherry-jennings-56ab211/" target="_blank" class="contact-popup-item linkedin">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                    </svg>
+                    <span>LinkedIn</span>
+                </a>
+                <a href="mailto:sherry.graphicdesign@gmail.com" class="contact-popup-item email">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                    </svg>
+                    <span>sherry.graphicdesign@gmail.com</span>
+                </a>
+                <a href="tel:408-504-4768" class="contact-popup-item phone">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/>
+                    </svg>
+                    <span>(408) 504-4768</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
