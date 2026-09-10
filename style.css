@@ -187,7 +187,7 @@ body {
     position: relative;
     background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 50%, var(--accent) 100%);
     color: var(--white);
-    padding: 10rem 24px 8rem;
+    padding: 6rem 24px 5rem;
     overflow: hidden;
 }
 
