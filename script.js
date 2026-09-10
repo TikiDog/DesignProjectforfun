@@ -137,6 +137,46 @@ if (mobileMenuToggle) {
 console.log('Sherry Jennings Portfolio - Loaded Successfully');
 
 // ========================================
+// CONTACT POPUP FUNCTIONALITY
+// ========================================
+
+const contactPopup = document.getElementById('contactPopup');
+const contactPopupBtn = document.getElementById('contactPopupBtn');
+const contactPopupClose = document.querySelector('.contact-popup-close');
+
+// Open contact popup
+if (contactPopupBtn) {
+    contactPopupBtn.addEventListener('click', () => {
+        contactPopup.classList.add('active');
+        document.body.style.overflow = 'hidden'; // Prevent background scrolling
+    });
+}
+
+// Close contact popup
+const closeContactPopup = () => {
+    contactPopup.classList.remove('active');
+    document.body.style.overflow = ''; // Restore scrolling
+};
+
+if (contactPopupClose) {
+    contactPopupClose.addEventListener('click', closeContactPopup);
+}
+
+// Close popup when clicking outside
+contactPopup.addEventListener('click', (e) => {
+    if (e.target === contactPopup) {
+        closeContactPopup();
+    }
+});
+
+// Close popup on Escape key
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && contactPopup.classList.contains('active')) {
+        closeContactPopup();
+    }
+});
+
+// ========================================
 // PDF LIGHTBOX FUNCTIONALITY
 // ========================================
 
@@ -268,4 +308,3 @@ document.addEventListener('keydown', (e) => {
         closeLightbox();
     }
 });
-// JavaScript Document
